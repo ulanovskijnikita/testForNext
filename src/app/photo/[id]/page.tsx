@@ -2,6 +2,8 @@ import Pathname from "./Pathname"
 
 const Photo = async ({ params }: PageProps<'/photo/[id]'>) => {
 
+    console.log('tester3')
+    console.log('tester2')
     console.log('tester')
     console.log('load dynamic')
     await new Promise((res) => setTimeout(() => {res(null)}, 2000))
