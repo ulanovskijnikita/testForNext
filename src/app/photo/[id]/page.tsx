@@ -2,15 +2,11 @@ import Pathname from "./Pathname"
 
 const Photo = async ({ params }: PageProps<'/photo/[id]'>) => {
 
-    console.log('tester3')
-    console.log('tester2')
-    console.log('load dynamic with rebase')
-    console.log('load dynamic with')
-    await new Promise((res) => setTimeout(() => {res(null)}, 2000))
-    const { id } = await params
+    console.log('load dynamic')
 
-    console.log('dynamic params')
-    console.log(id)
+    await new Promise((res) => setTimeout(() => {res(null)}, 2000))
+
+    const { id } = await params
 
     return (
 
