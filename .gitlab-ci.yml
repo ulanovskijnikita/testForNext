@@ -34,4 +34,6 @@ deploy-job:      # This job runs in the deploy stage.
   tags:
     - powershell
   script:
+    - npm i
+    - npm run build 
     - vercel
