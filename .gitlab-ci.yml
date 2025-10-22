@@ -25,7 +25,6 @@ build-job:       # This job runs in the build stage, which runs first.
   tags:
     - powershell 
   script:
-    - cd GitLab-Runner
     - npm i
     - npm run build 
 
@@ -35,7 +34,4 @@ deploy-job:      # This job runs in the deploy stage.
   tags:
     - powershell
   script:
-    - cd GitLab-Runner
-    - npm i
-    - npm run build 
     - vercel
