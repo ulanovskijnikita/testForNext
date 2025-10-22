@@ -34,4 +34,4 @@ deploy-job:      # This job runs in the deploy stage.
   tags:
     - powershell
   script:
-    - vercel
+    - vercel build --yes
