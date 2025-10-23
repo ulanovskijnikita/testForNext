@@ -1,5 +1,4 @@
 // нужно понять о build в next
-// ломающий код 
 // export async function generateStaticParams() {
 
 //     return [{second: 'second-0'}, {second: 'second-1'}, {second: 'second-2'}, {second: 'second-3'}, {second: 'second-4'}, {second: 'second-5'}, {second: 'second-6'},].map(({second}) => {
