@@ -10,7 +10,7 @@
 //         }
 //     })
 // }
-// 
+//  
 
 // const Dynamic = async ({params}: PageProps<'/test2/[first]/[second]'>) => {
 
