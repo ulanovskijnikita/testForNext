@@ -1,3 +1,4 @@
+// нужно понять о build в next
 // ломающий код 
 export async function generateStaticParams() {
 
