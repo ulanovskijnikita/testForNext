@@ -1,25 +1,25 @@
-export async function generateStaticParams() {
+// export async function generateStaticParams() {
 
-    return [{second: 'second-0'}, {second: 'second-1'}, {second: 'second-2'}, {second: 'second-3'}, {second: 'second-4'}, {second: 'second-5'}, {second: 'second-6'},].map(({second}) => {
+//     return [{second: 'second-0'}, {second: 'second-1'}, {second: 'second-2'}, {second: 'second-3'}, {second: 'second-4'}, {second: 'second-5'}, {second: 'second-6'},].map(({second}) => {
 
-        return {
+//         return {
 
-            first: 'first-0',
-            second: second,
-        }
-    })
-}
+//             first: 'first-0',
+//             second: second,
+//         }
+//     })
+// }
 
-const Dynamic = async ({params}: PageProps<'/test2/[first]/[second]'>) => {
+// const Dynamic = async ({params}: PageProps<'/test2/[first]/[second]'>) => {
 
-    const {first, second} = await params
+//     const {first, second} = await params
 
-    return <>
+//     return <>
     
-        <p>{first}</p>
+//         <p>{first}</p>
 
-        <p>{second}</p>
-    </>
-}
+//         <p>{second}</p>
+//     </>
+// }
 
-export default Dynamic
+// export default Dynamic
