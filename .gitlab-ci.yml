@@ -15,11 +15,6 @@
 # https://docs.gitlab.com/development/cicd/templates/
 # This specific template is located at:
 # https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Getting-Started.gitlab-ci.yml
-cache:
-  key: ${CI_COMMIT_REF_SLUG}
-  paths:
-    - node_modules/
-    - .next/cache/
     
 stages:          # List of stages for jobs, and their order of execution 
   - build 
@@ -32,6 +27,11 @@ build-job:       # This job runs in the build stage, which runs first.
   script:
     - npm ci
     - npm run build
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}
+    paths:
+      - node_modules/
+      - .next/cache/
 
 deploy-job:      # This job runs in the deploy stage.
   stage: deploy  # It only runs when *both* jobs in the test stage complete successfully.
@@ -40,3 +40,8 @@ deploy-job:      # This job runs in the deploy stage.
     - powershell
   script:
     - vercel --token=$VERCEL_TOKEN
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}
+    paths:
+      - node_modules/
+      - .next/cache/
