@@ -41,6 +41,6 @@ deploy-job:      # This job runs in the deploy stage.
   tags:
     - powershell
   script:
-    - vercel --yes --token=$VERCEL_TOKEN
+    - vercel --yes --prod --token=$VERCEL_TOKEN
   cache:
     policy: pull
