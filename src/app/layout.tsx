@@ -30,7 +30,7 @@ export default function RootLayouter({ children}: LayoutProps<'/'>) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${lora.variable} antialiased h-screen bg-green-200`}
+        className={`${geistSans.variable} ${geistMono.variable} ${lora.variable} antialiased h-screen bg-red-300`}
       >
         {children}
       </body>
