@@ -30,7 +30,7 @@ build-job:       # This job runs in the build stage, which runs first.
   tags: 
     - powershell 
   script:
-    - npm i
+    - npm ci
     - npm run build
   cache:
     policy: push
